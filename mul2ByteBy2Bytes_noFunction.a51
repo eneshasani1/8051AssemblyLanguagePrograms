@@ -1,0 +1,44 @@
+MOV A, 30H
+MOV B, 32H
+MUL AB				// BA
+MOV 40H, A			//e0
+MOV R0, B
+MOV A, 30H
+MOV B, 33H
+MUL AB		//BA
+CLR C
+ADD A, R0
+MOV 41H, A			//e1
+MOV A,B
+ADDC A, #0
+MOV 42H, A			//e2
+
+MOV A, 31H
+MOV B, 32H
+MUL AB		//BA
+MOV R0, A	//h0
+MOV R1, B
+MOV A, 31H
+MOV B, 33H
+MUL AB		//BA
+CLR C
+ADD A,R1
+MOV R1, A   //h1
+MOV A, B
+ADDC A,#0
+MOV R2, A 	//h2
+
+CLR C
+MOV A, R0
+ADD A, 41H
+MOV 41H, A
+
+MOV A, R1
+ADDC A, 42H
+MOV 42H, A
+
+MOV A, R2
+ADDC A, #0
+MOV 43H, A
+
+
