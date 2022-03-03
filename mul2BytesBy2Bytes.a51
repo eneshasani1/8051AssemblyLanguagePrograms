@@ -10,6 +10,7 @@ MOV 41H,@R0 // 	e1
 INC R0
 MOV 42H,@R0 //	e2
 
+//////////////////////////////////////////////////////////////////////
 MOV 70H, 51H		//71H e kem vleren e 60H, N'72H e kem vleren 61H
 MOV R0, #70H
 LCALL mul2Bby1B
