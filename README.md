@@ -12,7 +12,7 @@ This program sends my name to the serial port the first time the push-button swi
 ##### Note: 
 We've got to make sure that only the first time push-button switches are pressed we send name or surname.
 ##### Contributors:
-Artin Sermaxhaj(https://github.com/artini123), Donat Sinani(https://github.com/donats1n), Enes Hasani, Erlis Lushtaku(https://github.com/erlis-lushtaku)
+[Artin Sermaxhaj](https://github.com/artini123), [Donat Sinani](https://github.com/donats1n), [Enes Hasani](https://github.com/eneshasani1), [Erlis Lushtaku](https://github.com/erlis-lushtaku)
 #### 5) mul2ByteBy1Byte
 Firstly this program multiplies 2 positive numbers, one of them is 2 bytes found in addresses [30H(LSB), 31H(MSB)] and the other one is one byte found in address 33H. To this result, the 2019H constant is added. Multiplication is carried out using MUL AB instruction. The result is placed in addresses 40H up to 42H. . 
 #### 6) mul2ByteBy2Bytes_noFunction
