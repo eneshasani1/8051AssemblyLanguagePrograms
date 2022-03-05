@@ -27,7 +27,7 @@ label3:
 		DEC R1
 	DJNZ R2, label4
 */
-//		Nese sdojna me bo me loop rreshtin 20-27 e zevendesojme me rreshtat ne vazhdim
+//		Nese dojna me bo me loop rreshtin 21-28 e zevendesojme me rreshtat ne vazhdim
 MOV 44H,@R0
 DEC R0
 MOV 43H, @R0
