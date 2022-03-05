@@ -19,3 +19,7 @@ Firstly this program multiplies 2 positive numbers, one of them is 2 bytes found
 This program multiplies 2 positive 2-byte numbers found in addresses [30H(LSB),31H(MSB)] and [32H(LSB),33H(MSB)]. Multiplication is carried out using MUL AB instruction. The result is placed in addresses 40H up to 43H.
 #### 7) mul2BytesBy2Bytes 
 This program multiplies 2 positive 2-byte numbers found in addresses [50H(LSB),51H(MSB)] and [60H(LSB),61H(MSB)]. To carry this multiplication it uses the "mul2Bby1B" routine which implements the same logic implemented in the "mul2ByteBy1Byte" program.
+#### 8) send_Id
+This program responds with OK followed by CR+LF in case my university ID(in this case a number equal in length to my university Id is written in line 2) followed by CR is received in serial port. For every other received row, it responds with a '>' followed by CR+LF. 
+##### Note:
+The reverse ID number must be written in line 2 in order to correctly detect university ID.
